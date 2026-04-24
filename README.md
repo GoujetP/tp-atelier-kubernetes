@@ -144,6 +144,12 @@ multipass exec k3s-master -- sudo kubectl get pods,svc -n dev
 multipass exec k3s-master -- sudo kubectl get pods,svc -n prod
 ```
 
+Tester l'appli : 
+```
+multipass exec k3s-master -- curl http://localhost:30083 #DEV
+multipass exec k3s-master -- curl http://localhost:30082 #PROD
+```
+
 ### 4. Cycle de vie Git (Git Flow)
 
 Pour tester une évolution :
