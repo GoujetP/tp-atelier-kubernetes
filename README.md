@@ -135,7 +135,7 @@ multipass exec k3s-master -- sudo kubectl apply -f argocd-app-prod.yaml
 
 ### 3. Vérification des environnements isolés
 
-Chaque environnement tourne dans son propre namespace et sur son propre NodePort (30081 pour dev, 30082 pour prod) :
+Chaque environnement tourne dans son propre namespace et sur son propre NodePort (30083 pour dev, 30082 pour prod) :
 ```bash
 # Vérifier l'environnement DEV (1 replica)
 multipass exec k3s-master -- sudo kubectl get pods,svc -n dev
